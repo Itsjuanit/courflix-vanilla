@@ -74,20 +74,25 @@ body {
                     &:hover{
                        background-color: rgba(0, 0, 0, 0.5); 
                     }
+
+                    @media (max-width: $mobile-breakpoint) {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
                 }
 
                 @media (max-width: $mobile-breakpoint) {
                     display: none;
                     position: absolute;
                     top: 100%;
+                    left: 0;
                     height: 100vh;
-                    width: 250px;
+                    width: 270px;
                     background-color: #000;
                     flex-direction: column;
+                    padding: 20px;
 
-                    .header-anchor {
-                        padding: 20px;
-                    }
+                    
 
                     &.open {
                         display: inline-flex;
@@ -98,9 +103,18 @@ body {
     }
 
     .main {
-        background-image: url(/SRC/images-courflix/portada.png);
+        //background-image: url(/SRC/images-courflix/portada.png);
         color: #fff;
-
+        
+        @media (max-width: $mobile-breakpoint) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            overflow-x: hidden;
+            min-width: 100vw;
+        }
         &-photo {
             background-image: url(/SRC/images-courflix/portada.png);
             background-size: cover;
@@ -109,6 +123,13 @@ body {
             min-height: 85vh;
             color: #fff;
 
+            @media (max-width: $mobile-breakpoint) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
             &-secondarytText {
                 font-size: 1.5em;
                 margin-bottom: 18px;
@@ -121,6 +142,25 @@ body {
                 line-height: 1em;
                 max-width: 650px;
                 font-weight: bold;
+            }
+
+            &-button-1 {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 198px;
+                height: 60px;
+                background: rgba(157, 151, 151, 0.5);
+                border-radius: 9px;
+                margin-right: 25px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.3rem;
+                font-weight: 400;
+
+                @media (max-width: $mobile-breakpoint) {
+                    margin-bottom: 10px;
+                }
             }
 
             &-button {

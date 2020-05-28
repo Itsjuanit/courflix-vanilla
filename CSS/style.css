@@ -87,19 +87,25 @@ body .wrapper .header-nav-anchor:hover {
 }
 
 @media (max-width: 568px) {
+  body .wrapper .header-nav-anchor {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 568px) {
   body .wrapper .header-nav {
     display: none;
     position: absolute;
     top: 100%;
+    left: 0;
     height: 100vh;
-    width: 250px;
+    width: 270px;
     background-color: #000;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  body .wrapper .header-nav .header-anchor {
     padding: 20px;
   }
   body .wrapper .header-nav.open {
@@ -110,8 +116,28 @@ body .wrapper .header-nav-anchor:hover {
 }
 
 body .main {
-  background-image: url(/SRC/images-courflix/portada.png);
   color: #fff;
+}
+
+@media (max-width: 568px) {
+  body .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    overflow-x: hidden;
+    min-width: 100vw;
+  }
 }
 
 body .main-photo {
@@ -121,6 +147,24 @@ body .main-photo {
   padding: 160px 80px 120px;
   min-height: 85vh;
   color: #fff;
+}
+
+@media (max-width: 568px) {
+  body .main-photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 body .main-photo-secondarytText {
@@ -135,6 +179,33 @@ body .main-photo-principalText {
   line-height: 1em;
   max-width: 650px;
   font-weight: bold;
+}
+
+body .main-photo-button-1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 198px;
+  height: 60px;
+  background: rgba(157, 151, 151, 0.5);
+  border-radius: 9px;
+  margin-right: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+@media (max-width: 568px) {
+  body .main-photo-button-1 {
+    margin-bottom: 10px;
+  }
 }
 
 body .main-photo-button {

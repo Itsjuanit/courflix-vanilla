@@ -235,7 +235,7 @@ body {
             flex-direction: column;
             width: 100%;
             background-color: #000;
-            min-height: 130vh;
+            min-height: 50vh;
 
             .first-carousel {
                 
@@ -244,26 +244,16 @@ body {
                     padding-bottom: 22px;
                     padding-top: 10px;
                 }
-            }
-
-            .second-carousel {
                 
-                .series-title {
-                    font-size: 1.5em;
-                    padding-bottom: 22px;
-                    padding-top: 54px;
+                
+                    .series-images{
+                        text-decoration: none;
+                        padding: 10px;
+                        color: #fff;
+                        font-size: 1.5em;
+    
                 }
             }
-
-            .third-carousel {
-                
-                .series-title {
-                    font-size: 1.5em;
-                    padding-bottom: 22px;
-                    padding-top: 54px;
-
-                }
-            }
-        }
+         }
     }
 }
