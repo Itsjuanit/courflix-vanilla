@@ -49,7 +49,7 @@ body {
                     background-color: rgba(0, 0, 0, 0.5);
                 }
 
-                @media (max-width: $mobile-breakpoint){
+                @media (max-width: $mobile-breakpoint) {
                     display: none;
                     display: inline-flex;
                 }
@@ -71,23 +71,27 @@ body {
                     padding-right: 27px;
                     text-decoration: none;
 
-                    &:hover{
-                        background-color: rgba(0, 0, 0, 0.5); 
-                     }
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.5)
+                    }
+
+                    @media (max-width: $mobile-breakpoint) {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
                 }
 
                 @media (max-width: $mobile-breakpoint) {
                     display: none;
                     position: absolute;
                     top: 100%;
+                    left: 0;
                     height: 100vh;
-                    width: 250px;
+                    width: 270px;
                     background-color: #000;
                     flex-direction: column;
+                    padding: 20px;
 
-                    .header-anchor {
-                        padding: 20px;
-                    }
 
                     &.open {
                         display: inline-flex;
@@ -100,6 +104,16 @@ body {
     .main {
         color: #fff;
 
+        @media (max-width: $mobile-breakpoint) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            overflow-x: hidden;
+            min-width: 100vw;
+        }
+
         &-photo {
             background-image: url(/SRC/images-courflix/portada1.png);
             background-size: cover;
@@ -107,6 +121,13 @@ body {
             padding: 160px 80px 120px;
             min-height: 85vh;
             color: #fff;
+
+            @media (max-width: $mobile-breakpoint) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
             &-secondarytText {
                 font-size: 1.5em;
@@ -120,6 +141,10 @@ body {
                 line-height: 1em;
                 max-width: 650px;
                 font-weight: bold;
+
+                @media (max-width: $mobile-breakpoint) {
+                    text-align: center;
+                }
             }
 
             .green-box {
@@ -157,7 +182,7 @@ body {
                         border: 2px solid #fff;
                         padding: 10px;
 
-                        &:hover{
+                        &:hover {
                             cursor: pointer;
                             background-color: rgba(212, 212, 212, 0.37);
                             color: #000;
@@ -171,7 +196,7 @@ body {
                         border: 2px solid #fff;
                         padding: 10px;
 
-                        &:hover{
+                        &:hover {
                             cursor: pointer;
                             background-color: rgba(212, 212, 212, 0.37);
                             color: #000;
@@ -209,6 +234,10 @@ body {
                 color: #fff;
                 font-size: 1.3rem;
                 font-weight: 400;
+
+                @media (max-width: $mobile-breakpoint) {
+                    margin-bottom: 10px;
+                }
             }
 
             &-thirdText {
@@ -225,7 +254,7 @@ body {
             }
         }
 
-        
+
         //COMIENZA EL CAROUSEL
 
         &-carousel-principal {
@@ -238,22 +267,22 @@ body {
             min-height: 50vh;
 
             .first-carousel {
-                
+
                 .series-title-one {
                     font-size: 1.5em;
                     padding-bottom: 22px;
                     padding-top: 10px;
                 }
-                
-                
-                    .series-images{
-                        text-decoration: none;
-                        padding: 10px;
-                        color: #fff;
-                        font-size: 1.5em;
-    
+
+
+                .series-images {
+                    text-decoration: none;
+                    padding: 10px;
+                    color: #fff;
+                    font-size: 1.5em;
+
                 }
             }
-         }
+        }
     }
 }

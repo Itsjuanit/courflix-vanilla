@@ -49,7 +49,7 @@ body {
                     background-color: rgba(0, 0, 0, 0.5);
                 }
 
-                @media (max-width: $mobile-breakpoint){
+                @media (max-width: $mobile-breakpoint) {
                     display: none;
                     display: inline-flex;
                 }
@@ -71,8 +71,8 @@ body {
                     padding-right: 27px;
                     text-decoration: none;
 
-                    &:hover{
-                       background-color: rgba(0, 0, 0, 0.5); 
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.5);
                     }
 
                     @media (max-width: $mobile-breakpoint) {
@@ -92,8 +92,6 @@ body {
                     flex-direction: column;
                     padding: 20px;
 
-                    
-
                     &.open {
                         display: inline-flex;
                     }
@@ -103,9 +101,8 @@ body {
     }
 
     .main {
-        //background-image: url(/SRC/images-courflix/portada.png);
         color: #fff;
-        
+
         @media (max-width: $mobile-breakpoint) {
             display: flex;
             flex-direction: column;
@@ -115,6 +112,7 @@ body {
             overflow-x: hidden;
             min-width: 100vw;
         }
+
         &-photo {
             background-image: url(/SRC/images-courflix/portada.png);
             background-size: cover;
@@ -129,7 +127,7 @@ body {
                 justify-content: center;
                 align-items: center;
             }
-            
+
             &-secondarytText {
                 font-size: 1.5em;
                 margin-bottom: 18px;
