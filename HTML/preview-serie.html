@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/preview-serie.css">
     <link rel="stylesheet" href="/CSS/reset.css">
+    <script src="https://kit.fontawesome.com/9634c964d7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/LIBRARIES/glide-3.4.1/glide-3.4.1/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="/LIBRARIES/glide-3.4.1/glide-3.4.1/dist/css/glide.theme.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
@@ -18,10 +19,11 @@
     <div class="wrapper">
         <!--Aca comienza el header-->
         <header class="header">
+            <button class="header-menu js-menuHamburger"><i class="fas fa-bars"></i></button>
             <a href="" class="header-logo"><img
                     src="https://fontmeme.com/permalink/200526/179c0a6e7157b4da01ae6c279a5001c6.png" alt="netflix-font"
                     border="0" width="130px"></a>
-            <nav class="header-nav">
+            <nav class="header-nav js-nav">
                 <a href="" class="header-nav-anchor">Inicio</a>
                 <a href="" class="header-nav-anchor">Series</a>
                 <a href="" class="header-nav-anchor">Peliculas</a>
@@ -29,7 +31,6 @@
                 <a href="" class="header-nav-anchor">Mi lista</a>
             </nav>
         </header>
-        <div class="gradiente"></div>
         <!--Aca comienza el main-->
         <main class="main">
             <!--Serie principal con botones y breve descripcion-->
@@ -55,92 +56,18 @@
             <!--Comienzo el carousel-->
             <div class="main-carousel-principal">
                 <div class="first-carousel">
-                    <div class="series-title-one">Series</div>
+                    <div class="series-title-one">Temporadas</div>
                     <div class="glide carousels">
                         <div class="glide__track" data-glide-el="track">
                             <ul class="glide__slides">
-                                <li class="glide__slide"><a href="" class="series-images"><img
-                                            src="/SRC/images-courflix/Bitmap-1.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-10.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-2.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-3.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-4.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-5.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-6.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-7.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-2.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="glide__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-                                <</button> <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="second-carousel">
-                    <div class="series-title">Seguir viendo contenido de Juani</div>
-                    <div class="glide carousels">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide"><a href="" class="series-images"><img
-                                            src="/SRC/images-courflix/Bitmap-1.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-2.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-4.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-3.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-4.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-5.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-6.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-7.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-2.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="glide__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-                                <</button> <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="third-carousel">
-                    <div class="series-title">Agregado recientemente</div>
-                    <div class="glide carousels">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide"><a href="" class="series-images"><img
-                                            src="/SRC/images-courflix/Bitmap-1.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-10.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-2.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-3.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-4.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-5.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-6.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-7.png" alt=""></a></li>
-                                <li class="glide__slide"><a href="" class="series-iamges"><img
-                                            src="/SRC/images-courflix/Bitmap-2.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="" class="series-images">Temporada 1<img
+                                            src="/SRC/images-courflix/Bitmap-S1.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="" class="series-iamges">Temporada 2<img
+                                            src="/SRC/images-courflix/Bitmap-S2.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="" class="series-iamges">Temporada 3<img
+                                            src="/SRC/images-courflix/Bitmap-S3.png" alt=""></a></li>
+                                <li class="glide__slide"><a href="" class="series-iamges">Temporada 4<img
+                                            src="/SRC/images-courflix/Bitmap-S4.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="glide__arrows" data-glide-el="controls">

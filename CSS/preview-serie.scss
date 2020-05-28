@@ -34,6 +34,27 @@ body {
             background-color: rgba(0, 0, 0, 0.8);
             padding: 5px;
 
+            &-menu {
+                display: none;
+                padding: 0;
+                border: 0;
+                background-color: transparent;
+                width: 50px;
+                height: 50px;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.7em;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+
+                @media (max-width: $mobile-breakpoint){
+                    display: none;
+                    display: inline-flex;
+                }
+            }
+
             &-logo {
                 border-right: 30px;
                 margin-right: 87.3px;
@@ -49,13 +70,34 @@ body {
                     color: #fff;
                     padding-right: 27px;
                     text-decoration: none;
+
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.5); 
+                     }
+                }
+
+                @media (max-width: $mobile-breakpoint) {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    height: 100vh;
+                    width: 250px;
+                    background-color: #000;
+                    flex-direction: column;
+
+                    .header-anchor {
+                        padding: 20px;
+                    }
+
+                    &.open {
+                        display: inline-flex;
+                    }
                 }
             }
         }
     }
 
     .main {
-        background-image: url(/SRC/images-courflix/portada.png);
         color: #fff;
 
         &-photo {
@@ -183,14 +225,7 @@ body {
             }
         }
 
-        .gradiente {
-            width: 100%;
-            height: 150px;
-            margin-top: 150px;
-            background: #000;
-            background: linear-gradient(0deg, #c5282d 36%, rgba(0, 0, 0, 0) 100%);
-        }
-
+        
         //COMIENZA EL CAROUSEL
 
         &-carousel-principal {
@@ -203,12 +238,7 @@ body {
             min-height: 130vh;
 
             .first-carousel {
-
-                li {
-                    margin-right: 16px;
-                    margin-left: 16px;
-                }
-
+                
                 .series-title-one {
                     font-size: 1.5em;
                     padding-bottom: 22px;
@@ -217,11 +247,7 @@ body {
             }
 
             .second-carousel {
-                li {
-                    margin-right: 16px;
-                    margin-left: 16px;
-                }
-
+                
                 .series-title {
                     font-size: 1.5em;
                     padding-bottom: 22px;
@@ -230,11 +256,7 @@ body {
             }
 
             .third-carousel {
-                li {
-                    margin-right: 16px;
-                    margin-left: 16px;
-                }
-
+                
                 .series-title {
                     font-size: 1.5em;
                     padding-bottom: 22px;
