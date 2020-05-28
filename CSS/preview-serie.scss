@@ -1,0 +1,247 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+//FONT
+$principal-font: 'Open Sans',
+sans-serif;
+
+/*BREAK POINTS*/
+$minimobile-breakpoint: 300px;
+$mobile-breakpoint: 568px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+body {
+    background-color: #000;
+    overflow-x: hidden;
+
+    .wrapper {
+        min-width: 100vw;
+        font-family: $principal-font;
+        background-color: #000;
+
+        .header {
+            width: 100%;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            position: fixed;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 5px;
+
+            &-logo {
+                border-right: 30px;
+                margin-right: 87.3px;
+                margin-left: 81px;
+            }
+
+            &-nav {
+                white-space: nowrap;
+                display: flex;
+                font-size: 1.2rem;
+
+                &-anchor {
+                    color: #fff;
+                    padding-right: 27px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .main {
+        background-image: url(/SRC/images-courflix/portada.png);
+        color: #fff;
+
+        &-photo {
+            background-image: url(/SRC/images-courflix/portada1.png);
+            background-size: cover;
+            background-position: center;
+            padding: 160px 80px 120px;
+            min-height: 85vh;
+            color: #fff;
+
+            &-secondarytText {
+                font-size: 1.5em;
+                margin-bottom: 18px;
+                font-weight: bold;
+            }
+
+            &-principalText {
+                font-size: 7.5em;
+                margin-bottom: 15px;
+                line-height: 1em;
+                max-width: 650px;
+                font-weight: bold;
+            }
+
+            .green-box {
+                display: flex;
+                flex-direction: wrap;
+                margin-bottom: 10px;
+
+                .span-95 {
+                    color: #009c04;
+                    font-weight: 700;
+                    padding: 14px;
+                }
+
+                .span-year {
+                    color: #fff;
+                    padding: 14px;
+                }
+
+                .span-edad {
+                    color: #fff;
+                    padding: 14px;
+                }
+
+                .temporadas {
+                    color: #fff;
+                    padding: 14px;
+                    font-weight: bold;
+                }
+
+                &-circle {
+
+                    .fa-thumbs-up {
+                        font-size: 2em;
+                        border-radius: 50px;
+                        border: 2px solid #fff;
+                        padding: 10px;
+
+                        &:hover{
+                            cursor: pointer;
+                            background-color: rgba(212, 212, 212, 0.37);
+                            color: #000;
+                            border: 2px solid rgba(212, 212, 212, 0.37);
+                        }
+                    }
+
+                    .fa-thumbs-down {
+                        font-size: 2em;
+                        border-radius: 50px;
+                        border: 2px solid #fff;
+                        padding: 10px;
+
+                        &:hover{
+                            cursor: pointer;
+                            background-color: rgba(212, 212, 212, 0.37);
+                            color: #000;
+                            border: 2px solid rgba(212, 212, 212, 0.37);
+                        }
+                    }
+                }
+            }
+
+            &-button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 198px;
+                height: 60px;
+                background: rgba(157, 151, 151, 0.5);
+                border-radius: 9px;
+                margin-right: 25px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.3rem;
+                font-weight: 400;
+            }
+
+            &-button-repro {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 198px;
+                height: 60px;
+                background: #ED0A1D;
+                border-radius: 9px;
+                margin-right: 25px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.3rem;
+                font-weight: 400;
+            }
+
+            &-thirdText {
+                margin-top: 20px;
+                font-size: 1.4em;
+            }
+
+            &-Text {
+                margin-top: 10px;
+                font-size: 1.4em;
+                max-width: 600px;
+                line-height: 2em;
+                font-weight: 200;
+            }
+        }
+
+        .gradiente {
+            width: 100%;
+            height: 150px;
+            margin-top: 150px;
+            background: #000;
+            background: linear-gradient(0deg, #c5282d 36%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        //COMIENZA EL CAROUSEL
+
+        &-carousel-principal {
+            margin: -100px 0 50px;
+            padding: 0 80px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #000;
+            min-height: 130vh;
+
+            .first-carousel {
+
+                li {
+                    margin-right: 16px;
+                    margin-left: 16px;
+                }
+
+                .series-title-one {
+                    font-size: 1.5em;
+                    padding-bottom: 22px;
+                    padding-top: 10px;
+                }
+            }
+
+            .second-carousel {
+                li {
+                    margin-right: 16px;
+                    margin-left: 16px;
+                }
+
+                .series-title {
+                    font-size: 1.5em;
+                    padding-bottom: 22px;
+                    padding-top: 54px;
+                }
+            }
+
+            .third-carousel {
+                li {
+                    margin-right: 16px;
+                    margin-left: 16px;
+                }
+
+                .series-title {
+                    font-size: 1.5em;
+                    padding-bottom: 22px;
+                    padding-top: 54px;
+
+                }
+            }
+        }
+    }
+}

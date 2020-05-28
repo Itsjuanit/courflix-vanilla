@@ -1,0 +1,174 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*BREAK POINTS*/
+body {
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+body .wrapper {
+  min-width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  background-color: #000;
+}
+
+body .wrapper .header {
+  width: 100%;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+}
+
+body .wrapper .header-logo {
+  border-right: 30px;
+  margin-right: 87.3px;
+  margin-left: 81px;
+}
+
+body .wrapper .header-nav {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+body .wrapper .header-nav-anchor {
+  color: #fff;
+  padding-right: 27px;
+  text-decoration: none;
+}
+
+body .main {
+  background-image: url(/SRC/images-courflix/portada.png);
+  color: #fff;
+}
+
+body .main-photo {
+  background-image: url(/SRC/images-courflix/portada.png);
+  background-size: cover;
+  background-position: center;
+  padding: 160px 80px 120px;
+  min-height: 85vh;
+  color: #fff;
+}
+
+body .main-photo-secondarytText {
+  font-size: 1.5em;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+body .main-photo-principalText {
+  font-size: 7.5em;
+  margin-bottom: 15px;
+  line-height: 1em;
+  max-width: 650px;
+  font-weight: bold;
+}
+
+body .main-photo-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 198px;
+  height: 60px;
+  background: rgba(157, 151, 151, 0.5);
+  border-radius: 9px;
+  margin-right: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+body .main-photo-thirdText {
+  margin-top: 20px;
+  font-size: 1.4em;
+}
+
+body .main-photo-Text {
+  margin-top: 10px;
+  font-size: 1.4em;
+  max-width: 600px;
+  line-height: 2em;
+  font-weight: 200;
+}
+
+body .main .gradiente {
+  width: 100%;
+  height: 150px;
+  margin-top: 150px;
+  background: #000;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(36%, #c5282d), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #c5282d 36%, rgba(0, 0, 0, 0) 100%);
+}
+
+body .main-carousel-principal {
+  margin: -100px 0 50px;
+  padding: 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #000;
+  min-height: 130vh;
+}
+
+body .main-carousel-principal .first-carousel li {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+body .main-carousel-principal .first-carousel .series-title-one {
+  font-size: 1.5em;
+  padding-bottom: 22px;
+  padding-top: 10px;
+}
+
+body .main-carousel-principal .second-carousel li {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+body .main-carousel-principal .second-carousel .series-title {
+  font-size: 1.5em;
+  padding-bottom: 22px;
+  padding-top: 54px;
+}
+
+body .main-carousel-principal .third-carousel li {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+body .main-carousel-principal .third-carousel .series-title {
+  font-size: 1.5em;
+  padding-bottom: 22px;
+  padding-top: 54px;
+}
+/*# sourceMappingURL=style.css.map */
