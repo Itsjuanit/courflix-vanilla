@@ -4,7 +4,7 @@ const carousels = document.querySelectorAll(".carousels");
         const slider = new Glide(carousel, {
             type: "carousel",
             perView: 4,
-            gap: 10,
+            gap: 5,
 
             breakpoints: {
                 800: {
