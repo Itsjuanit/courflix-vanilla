@@ -7,10 +7,14 @@ Object.values(carousels).map(carousel => {
         gap: 200,
 
         breakpoints: {
-            800: {
-                perView: 2
+            
+            768: {
+                perView:2
             },
-            480: {
+            568: {
+                perView: 1
+            },
+            320: {
                 perView: 1
             }
         }

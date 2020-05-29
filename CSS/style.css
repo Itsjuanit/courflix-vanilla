@@ -62,6 +62,17 @@ body .wrapper .header-menu:hover {
   }
 }
 
+body .wrapper .header-menu .fa-bars {
+  color: #fff;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+body .wrapper .header-menu .fa-bars:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 body .wrapper .header-logo {
   border-right: 30px;
   margin-right: 87.3px;
@@ -173,12 +184,36 @@ body .main-photo-secondarytText {
   font-weight: bold;
 }
 
+@media (max-width: 568px) {
+  body .main-photo-secondarytText {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 320px) {
+  body .main-photo-secondarytText {
+    display: none;
+  }
+}
+
 body .main-photo-principalText {
   font-size: 7.5em;
   margin-bottom: 15px;
   line-height: 1em;
   max-width: 650px;
   font-weight: bold;
+}
+
+@media (max-width: 568px) {
+  body .main-photo-principalText {
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 320px) {
+  body .main-photo-principalText {
+    font-size: 3.8em;
+  }
 }
 
 body .main-photo-button-1 {
@@ -263,10 +298,34 @@ body .main-carousel-principal .first-carousel .series-title-one {
   padding-top: 10px;
 }
 
+@media (max-width: 568px) {
+  body .main-carousel-principal .first-carousel .flechas {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  body .main-carousel-principal .first-carousel .flechas {
+    display: none;
+  }
+}
+
 body .main-carousel-principal .second-carousel .series-title {
   font-size: 1.5em;
   padding-bottom: 22px;
   padding-top: 54px;
+}
+
+@media (max-width: 568px) {
+  body .main-carousel-principal .second-carousel .flechas {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  body .main-carousel-principal .second-carousel .flechas {
+    display: none;
+  }
 }
 
 body .main-carousel-principal .second-carousel .progress {
@@ -390,5 +449,17 @@ body .main-carousel-principal .third-carousel .series-title {
   font-size: 1.5em;
   padding-bottom: 22px;
   padding-top: 54px;
+}
+
+@media (max-width: 568px) {
+  body .main-carousel-principal .third-carousel .flechas {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  body .main-carousel-principal .third-carousel .flechas {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

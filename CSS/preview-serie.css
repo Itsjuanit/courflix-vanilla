@@ -71,6 +71,17 @@ body .wrapper .header-menu:hover {
   }
 }
 
+body .wrapper .header-menu .fa-bars {
+  color: #fff;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+body .wrapper .header-menu .fa-bars:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 body .wrapper .header-logo {
   border-right: 30px;
   margin-right: 87.3px;
@@ -272,7 +283,8 @@ body .main-photo-principalText {
 
 @media (max-width: 568px) {
   body .main-photo-principalText {
-    text-align: start;
+    text-align: center;
+    font-size: 5em;
   }
 }
 
