@@ -218,6 +218,141 @@ body {
                     padding-bottom: 22px;
                     padding-top: 54px;
                 }
+
+                //PRIMERA BARRA PROGRESIVA
+                .progress {
+                    margin: 15px;
+                    width: 221px;
+                    height: 10px;
+                    background-color: #858585;
+                    
+
+                    &-bar {
+                        width: 157px;
+                        height: 10px;
+                        background-color: #C60F0E;
+                    }
+                }
+
+                //SEGUNDA BARRA PROGRESIVA
+                .progress-A {
+                    margin: 15px;
+                    width: 221px;
+                    height: 10px;
+                    background-color: #858585;
+                    
+
+                    .A {
+                        width: 60px;
+                        height: 10px;
+                        background-color: #C60F0E;
+                    }
+                }
+
+                //TERCER BARRA PROGRESIVA
+                .progress-B {
+                    margin: 15px;
+                    width: 221px;
+                    height: 10px;
+                    background-color: #858585;
+                    
+
+                    .B {
+                        width: 26px;
+                        height: 10px;
+                        background-color: #C60F0E;
+                    }
+                }
+
+                //CUARTA BARRA PROGRESIVA
+                .progress-C {
+                    margin: 15px;
+                    width: 221px;
+                    height: 10px;
+                    background-color: #858585;
+                    
+
+                    .C {
+                        width: 0px;
+                        height: 10px;
+                        background-color: #C60F0E;
+                    }
+                }
+
+                //QUINTA BARRA PROGRESIVA
+                .progress-D {
+                    margin: 15px;
+                    width: 221px;
+                    height: 10px;
+                    background-color: #858585;
+                    
+
+                    .D {
+                        width: 30px;
+                        height: 10px;
+                        background-color: #C60F0E;
+                    }
+                }
+
+                //SEXTA BARRA PROGRESIVA
+                .progress-E {
+                    margin: 15px;
+                    width: 221px;
+                    height: 10px;
+                    background-color: #858585;
+                    
+
+                    .E {
+                        width: 80px;
+                        height: 10px;
+                        background-color: #C60F0E;
+                    }
+                }
+
+                //SEPTIMA BARRA PROGRESIVA
+                .progress-F {
+                    margin: 15px;
+                    width: 221px;
+                    height: 10px;
+                    background-color: #858585;
+                    
+
+                    .F {
+                        width: 45px;
+                        height: 10px;
+                        background-color: #C60F0E;
+                    }
+                }
+
+                //OCTAVA BARRA PROGRESIVA
+                .progress-G {
+                    margin: 15px;
+                    width: 221px;
+                    height: 10px;
+                    background-color: #858585;
+                    
+
+                    .G {
+                        width: 10px;
+                        height: 10px;
+                        background-color: #C60F0E;
+                    }
+                }
+
+                //NOVENA BARRA PROGRESIVA
+                .progress-H {
+                    margin: 15px;
+                    width: 221px;
+                    height: 10px;
+                    background-color: #858585;
+                    
+
+                    .H {
+                        width: 55px;
+                        height: 10px;
+                        background-color: #C60F0E;
+                    }
+                }
             }
 
             .third-carousel {

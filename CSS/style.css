@@ -269,6 +269,123 @@ body .main-carousel-principal .second-carousel .series-title {
   padding-top: 54px;
 }
 
+body .main-carousel-principal .second-carousel .progress {
+  margin: 15px;
+  width: 221px;
+  height: 10px;
+  background-color: #858585;
+}
+
+body .main-carousel-principal .second-carousel .progress-bar {
+  width: 157px;
+  height: 10px;
+  background-color: #C60F0E;
+}
+
+body .main-carousel-principal .second-carousel .progress-A {
+  margin: 15px;
+  width: 221px;
+  height: 10px;
+  background-color: #858585;
+}
+
+body .main-carousel-principal .second-carousel .progress-A .A {
+  width: 60px;
+  height: 10px;
+  background-color: #C60F0E;
+}
+
+body .main-carousel-principal .second-carousel .progress-B {
+  margin: 15px;
+  width: 221px;
+  height: 10px;
+  background-color: #858585;
+}
+
+body .main-carousel-principal .second-carousel .progress-B .B {
+  width: 26px;
+  height: 10px;
+  background-color: #C60F0E;
+}
+
+body .main-carousel-principal .second-carousel .progress-C {
+  margin: 15px;
+  width: 221px;
+  height: 10px;
+  background-color: #858585;
+}
+
+body .main-carousel-principal .second-carousel .progress-C .C {
+  width: 0px;
+  height: 10px;
+  background-color: #C60F0E;
+}
+
+body .main-carousel-principal .second-carousel .progress-D {
+  margin: 15px;
+  width: 221px;
+  height: 10px;
+  background-color: #858585;
+}
+
+body .main-carousel-principal .second-carousel .progress-D .D {
+  width: 30px;
+  height: 10px;
+  background-color: #C60F0E;
+}
+
+body .main-carousel-principal .second-carousel .progress-E {
+  margin: 15px;
+  width: 221px;
+  height: 10px;
+  background-color: #858585;
+}
+
+body .main-carousel-principal .second-carousel .progress-E .E {
+  width: 80px;
+  height: 10px;
+  background-color: #C60F0E;
+}
+
+body .main-carousel-principal .second-carousel .progress-F {
+  margin: 15px;
+  width: 221px;
+  height: 10px;
+  background-color: #858585;
+}
+
+body .main-carousel-principal .second-carousel .progress-F .F {
+  width: 45px;
+  height: 10px;
+  background-color: #C60F0E;
+}
+
+body .main-carousel-principal .second-carousel .progress-G {
+  margin: 15px;
+  width: 221px;
+  height: 10px;
+  background-color: #858585;
+}
+
+body .main-carousel-principal .second-carousel .progress-G .G {
+  width: 10px;
+  height: 10px;
+  background-color: #C60F0E;
+}
+
+body .main-carousel-principal .second-carousel .progress-H {
+  margin: 15px;
+  width: 221px;
+  height: 10px;
+  background-color: #858585;
+}
+
+body .main-carousel-principal .second-carousel .progress-H .H {
+  width: 55px;
+  height: 10px;
+  background-color: #C60F0E;
+}
+
 body .main-carousel-principal .third-carousel .series-title {
   font-size: 1.5em;
   padding-bottom: 22px;
