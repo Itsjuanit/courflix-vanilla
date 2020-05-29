@@ -493,11 +493,7 @@ body .main-carousel-principal .first-carousel li {
   padding: 10px;
 }
 
-body .main-carousel-principal .first-carousel li a {
-  text-decoration: none;
-}
-
-body .main-carousel-principal .first-carousel li a img {
+body .main-carousel-principal .first-carousel li img {
   padding-bottom: 20px;
 }
 /*# sourceMappingURL=preview-serie.css.map */

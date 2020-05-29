@@ -89,7 +89,7 @@ body {
                         padding-top: 10px;
                         padding-bottom: 10px;
                     }
-                    
+
                 }
 
                 @media (max-width: $mobile-breakpoint) {
@@ -217,8 +217,8 @@ body {
                 @media (max-width: $minimobile-breakpoint) {
                     display: flex;
                     flex-direction: row;
-                    
-                }                
+
+                }
 
                 .span-95 {
                     color: #009c04;
@@ -228,7 +228,7 @@ body {
                     @media (max-width: $mobile-breakpoint) {
                         display: none;
                     }
-    
+
                     @media (max-width: $minimobile-breakpoint) {
                         display: none;
                     }
@@ -255,7 +255,7 @@ body {
                     @media (max-width: $mobile-breakpoint) {
                         display: none;
                     }
-    
+
                     @media (max-width: $minimobile-breakpoint) {
                         display: none;
                     }
@@ -375,18 +375,15 @@ body {
                     padding-bottom: 22px;
                     padding-top: 10px;
                 }
-    
+
                 li {
                     font-size: 1.2em;
                     padding: 10px;
-                    a {
-                        text-decoration: none;
-                        img {
-                            padding-bottom: 20px;
-                            
-                        }
+
+                    img {
+                        padding-bottom: 20px;
                     }
-                    }
+                }
             }
         }
     }
