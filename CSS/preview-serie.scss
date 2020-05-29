@@ -9,7 +9,7 @@ $principal-font: 'Open Sans',
 sans-serif;
 
 /*BREAK POINTS*/
-$minimobile-breakpoint: 300px;
+$minimobile-breakpoint: 320px;
 $mobile-breakpoint: 568px;
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1280px;
@@ -53,6 +53,11 @@ body {
                     display: none;
                     display: inline-flex;
                 }
+
+                @media (max-width: $minimobile-breakpoint) {
+                    display: none;
+                    display: inline-flex;
+                }
             }
 
             &-logo {
@@ -79,6 +84,12 @@ body {
                         padding-top: 10px;
                         padding-bottom: 10px;
                     }
+
+                    @media (max-width: $minimobile-breakpoint) {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                    
                 }
 
                 @media (max-width: $mobile-breakpoint) {
@@ -93,6 +104,25 @@ body {
                     padding: 20px;
 
 
+
+                    &.open {
+                        display: inline-flex;
+                    }
+                }
+
+                @media (max-width: $minimobile-breakpoint) {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    height: 100vh;
+                    width: 270px;
+                    background-color: #000;
+                    flex-direction: column;
+                    padding: 20px;
+
+
+
                     &.open {
                         display: inline-flex;
                     }
@@ -105,6 +135,16 @@ body {
         color: #fff;
 
         @media (max-width: $mobile-breakpoint) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            overflow-x: hidden;
+            min-width: 100vw;
+        }
+
+        @media (max-width: $minimobile-breakpoint) {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -129,10 +169,25 @@ body {
                 align-items: center;
             }
 
+            @media (max-width: $minimobile-breakpoint) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
             &-secondarytText {
                 font-size: 1.5em;
                 margin-bottom: 18px;
                 font-weight: bold;
+
+                @media (max-width: $mobile-breakpoint) {
+                    display: none;
+                }
+
+                @media (max-width: $minimobile-breakpoint) {
+                    display: none;
+                }
             }
 
             &-principalText {
@@ -143,7 +198,14 @@ body {
                 font-weight: bold;
 
                 @media (max-width: $mobile-breakpoint) {
-                    text-align: center;
+                    text-align: start;
+                }
+
+                @media (max-width: $minimobile-breakpoint) {
+                    text-align: start;
+                    margin: 10px;
+                    font-size: 2.3em;
+                    font-weight: bold;
                 }
             }
 
@@ -152,10 +214,25 @@ body {
                 flex-direction: wrap;
                 margin-bottom: 10px;
 
+                @media (max-width: $minimobile-breakpoint) {
+                    display: flex;
+                    flex-direction: row;
+                    
+                }                
+
                 .span-95 {
                     color: #009c04;
                     font-weight: 700;
                     padding: 14px;
+
+                    @media (max-width: $mobile-breakpoint) {
+                        display: none;
+                    }
+    
+                    @media (max-width: $minimobile-breakpoint) {
+                        display: none;
+                    }
+
                 }
 
                 .span-year {
@@ -175,6 +252,13 @@ body {
                 }
 
                 &-circle {
+                    @media (max-width: $mobile-breakpoint) {
+                        display: none;
+                    }
+    
+                    @media (max-width: $minimobile-breakpoint) {
+                        display: none;
+                    }
 
                     .fa-thumbs-up {
                         font-size: 2em;
@@ -219,6 +303,15 @@ body {
                 color: #fff;
                 font-size: 1.3rem;
                 font-weight: 400;
+
+                @media (max-width: $mobile-breakpoint) {
+                    display: none;
+                }
+
+                @media (max-width: $minimobile-breakpoint) {
+                    display: none;
+                }
+
             }
 
             &-button-repro {
@@ -251,6 +344,15 @@ body {
                 max-width: 600px;
                 line-height: 2em;
                 font-weight: 200;
+
+                @media (max-width: $mobile-breakpoint) {
+                    display: none;
+                }
+
+                @media (max-width: $minimobile-breakpoint) {
+                    display: none;
+                }
+
             }
         }
 
@@ -273,15 +375,18 @@ body {
                     padding-bottom: 22px;
                     padding-top: 10px;
                 }
-
-
-                .series-images {
-                    text-decoration: none;
+    
+                li {
+                    font-size: 1.2em;
                     padding: 10px;
-                    color: #fff;
-                    font-size: 1.5em;
-
-                }
+                    a {
+                        text-decoration: none;
+                        img {
+                            padding-bottom: 20px;
+                            
+                        }
+                    }
+                    }
             }
         }
     }
