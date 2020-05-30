@@ -471,6 +471,18 @@ body .main-photo-thirdText {
   font-size: 1.4em;
 }
 
+@media (max-width: 568px) {
+  body .main-photo-thirdText {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  body .main-photo-thirdText {
+    display: none;
+  }
+}
+
 body .main-photo-Text {
   margin-top: 10px;
   font-size: 1.4em;
@@ -506,30 +518,93 @@ body .main-carousel-principal {
   min-height: 50vh;
 }
 
-body .main-carousel-principal .first-carousel .series-title-one {
+body .main-carousel-principal .series-title-one {
   font-size: 1.5em;
   padding-bottom: 22px;
   padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-body .main-carousel-principal .first-carousel li {
-  font-size: 1.2em;
-  padding: 10px;
-}
-
-body .main-carousel-principal .first-carousel li img {
-  padding-bottom: 20px;
+body .main-carousel-principal .series-title-one .series-title-h2 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #fff;
 }
 
 @media (max-width: 568px) {
-  body .main-carousel-principal .first-carousel .flechas {
-    display: none;
+  body .main-carousel-principal .series-title-one .series-title-h2 {
+    left: 0;
+    font-size: 1.2em;
+    min-width: 100vw;
   }
 }
 
 @media (max-width: 320px) {
-  body .main-carousel-principal .first-carousel .flechas {
-    display: none;
+  body .main-carousel-principal .series-title-one .series-title-h2 {
+    left: 0;
+  }
+}
+
+body .main-carousel-principal .series-title-one .series-seasons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 11px;
+}
+
+@media (max-width: 568px) {
+  body .main-carousel-principal .series-title-one .series-seasons {
+    padding-bottom: 15px;
+    font-size: 0.7em;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 320px) {
+  body .main-carousel-principal .series-title-one .series-seasons {
+    padding-bottom: 15px;
+    font-size: 0.7em;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+body .main-carousel-principal .series-title-one .series-seasons img {
+  padding-right: 11px;
+}
+
+@media (max-width: 568px) {
+  body .main-carousel-principal .series-title-one .series-seasons img {
+    max-width: 200px;
+    max-height: 90px;
+    padding-bottom: 15px;
+    padding-right: 11px;
+  }
+}
+
+@media (max-width: 320px) {
+  body .main-carousel-principal .series-title-one .series-seasons img {
+    max-width: 128px;
+    max-height: 72px;
+    padding-bottom: 15px;
+    padding-right: 11px;
   }
 }
 /*# sourceMappingURL=preview-serie.css.map */
