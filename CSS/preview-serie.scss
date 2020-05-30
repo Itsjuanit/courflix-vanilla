@@ -332,6 +332,11 @@ body {
                     display: none;
                 }
 
+                @media (max-width: $tablet-breakpoint) {
+                    display: none;
+                }
+                
+
             }
 
             &-button-repro {
@@ -349,7 +354,24 @@ body {
                 font-weight: 400;
 
                 @media (max-width: $mobile-breakpoint) {
-                    margin-bottom: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @media (max-width: $minimobile-breakpoint) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @media (max-width: $tablet-breakpoint) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
 
